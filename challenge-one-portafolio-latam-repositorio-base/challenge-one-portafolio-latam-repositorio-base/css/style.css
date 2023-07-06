@@ -313,10 +313,12 @@ section.experience{
 
 .experiencia__botao--repo{
     border: 1px solid var(--cor-btn);
-    background: none;
+    background: var(--cor-btn);
     font-size: 14px;
-    color: var(--cor-btn);
+    color: var(--cor-de-fundo-sec);
     padding: 10px;
+    border-bottom: 2px solid var(--cor-border);
+    border-radius: 7px;
 }
 
 .experience__botao--demo{
@@ -325,8 +327,8 @@ section.experience{
     font-size: 14px;
     color: var(--cor-de-fundo-sec);
     padding: 10px;
-    white-space: nowrap;
-
+    border-bottom: 2px solid var(--cor-border);
+    border-radius: 7px;
 }
 
 
@@ -390,6 +392,8 @@ section.formcontato{
     font-size: 14px;
     color: var(--cor-de-fundo-sec);
     padding: 10px;
+    border-bottom: 2px solid var(--cor-border);
+    border-radius: 7px;
 }
 
 /*footeer*/
@@ -615,79 +619,98 @@ Utiliza las referencias de los breakpoints @media abajo */
 
 /*Experiencia Profesional*/
 
-    section.experience{
+     section.experience {
         padding: 32px 64px;
     }
 
-    .experience__section__title{
+    .experience__section__title {
         font-size: 32px;
+        text-align: center;
     }
 
-    .experience__container{
-        align-items: flex-start;
+    .experience__container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        justify-content: center;
     }
 
-    .experience__box{
+    .experience__box {
         display: flex;
         flex-direction: row;
         gap: 16px;
         align-items: center;
+        background-color: #f0f0f0;
+        padding: 16px;
+        border-radius: 8px;
     }
-    
-    .experience__box:nth-child(even) .experience__img {
-    order: 2;
-}
 
-.experience__box:nth-child(odd) .experience__img {
-    order: 1;
-}
+    .experience__info-container {
+        flex: 1;
+    }
 
-.experience__info {
-    flex: 1;
-}
-
-     .experience__img{
+    .experience__img {
         width: 752px;
-        height: 406px;
-    } 
+        height: auto;
+        border-radius: 4px;
+    }
 
-    .experience__title{
+    .experience__title {
         font-size: 22px;
+        margin: 0;
     }
 
-    .experience__text{
+    .experience__text {
         font-size: 14px;
+        margin: 8px 0;
     }
 
- /*Contacto*/
-    section.formcontato{
+    .experience__description {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .experience__repo,
+    .experience__demo {
+        margin-right: 8px;
+    }
+
+    .experience__botao--repo,
+    .experience__botao--demo {
+        padding: 8px 16px;
+        background-color: var(--cor-btn);
+        border: none;
+        color: white;
+        font-size: 14px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    /* Sección de Contacto */
+    section.formcontato {
+        padding: 32px 64px;
         display: flex;
         justify-content: center;
-        padding: 32px 64px;
     }
 
-    .formcontato__contacto{
+    .formcontato__contacto {
         display: flex;
         flex-direction: row;
         gap: 16px;
         align-items: flex-end;
     }
 
-    .formcontato--esquerda{
+    .formcontato--esquerda {
         height: 100%;
     }
 
-    .formcontato__img{
-        display: flex;
+    .formcontato__img {
         width: 464px;
         height: 100%;
+        border-radius: 4px;
     }
 
-    .formcontato__title{
+    .formcontato__title {
         font-size: 32px;
     }
-
-
-/*Footer*/
-
 }
