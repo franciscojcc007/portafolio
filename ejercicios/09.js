@@ -1,3 +1,9 @@
+let pairs = [
+     [1, {  name: "nicolas" }],
+     [2, {  name: "felipe" }],
+     [3, {  name: "chanchito" }],
+];
+
 let array =[{
      id: 1,
      name: 'nicolas',
@@ -9,13 +15,8 @@ let array =[{
      name:'chanchito',
 }];
 
-let pares = [
-     [1, { id: 1, name: "nicolas" }],
-     [2, { id: 2, name: "felipe" }],
-     [3, { id: 3, name: "chanchito" }],
-];
 
-function toPairs(arr){
+function toCollectio(arr){
 
      let pairs =[];
      for(idx in arr){
@@ -25,5 +26,5 @@ function toPairs(arr){
      return pairs;
 }
 
-let resultado = toPairs(array);
+let resultado = toCollectio(pairs);
 console.log(resultado);
