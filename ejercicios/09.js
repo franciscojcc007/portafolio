@@ -18,12 +18,13 @@ let array =[{
 
 function toCollectio(arr){
 
-     let pairs =[];
+     let collection =[];
      for(idx in arr){
           let elemento = arr[idx];
-          pairs[idx] =[elemento.id, elemento]
+          collection[idx] = elemento[1];
+          collection[idx].id = elemento[0];
      }
-     return pairs;
+     return collection;
 }
 
 let resultado = toCollectio(pairs);
