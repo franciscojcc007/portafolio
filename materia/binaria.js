@@ -1,7 +1,5 @@
 function quickSort(arr) {
-  if (arr.length < 1) {
-    return [];
-  }
+  if (arr.length < 1) return []
   var left = [];
   var right = [];
   var pivot = arr[0];
@@ -31,4 +29,4 @@ function binarySearch(arr, l, r, x) {
 
 const arr = [2, 10, 4, 1, 20, 9, 14, 16, 5, 7, 17];
 console.log(quickSort(arr));
-console.log(binarySearch(arr, 0, arr.length - 1, 9));
+console.log(binarySearch(arr, 0, arr.length - 1, 2));
