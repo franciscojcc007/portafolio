@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  background-color: #7c7c7c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 60rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.titulo_principal {
+  color: #fff;
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+
+.foto_perfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.sobre_mi {
+  color: #fff;
+  margin-top: 1rem;
+  text-align: center;
+  max-width: 600px;
+}
+
+@media (max-width: 768px) {
+  .titulo_principal {
+    font-size: 1.5rem;
+  }
+
+  .foto_perfil {
+    width: 80px;
+    height: 80px;
+  }
+
+  .sobre_mi {
+    font-size: 0.9rem;
+  }
+}
