@@ -51,6 +51,11 @@ section {
   padding: 2rem;
 }
 
+li{
+  list-style: none;
+}
+
+
 footer {
   background-color: #333;
   color: #fff;
