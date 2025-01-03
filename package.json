@@ -1,0 +1,11 @@
+{
+  "name": "portafolio-personal",
+  "version": "1.0.0",
+  "description": "portafolio donde se muesta mis avilidades",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "francisco concepcion",
+  "license": "ISC"
+}
