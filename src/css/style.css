@@ -36,11 +36,12 @@ header {
   color: #fff;
   text-decoration: none;
 }
-.about{
+
+.about {
   margin-top: 3rem;
 }
 
-.foto{
+.foto {
   width: 150px;
   height: 150px;
   border-radius: 100px;
@@ -50,7 +51,7 @@ section {
   padding: 2rem;
 }
 
-li{
+li {
   list-style: none;
 }
 
@@ -61,4 +62,3 @@ footer {
   text-align: center;
   padding: 4rem 0;
 }
-
